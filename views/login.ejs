@@ -11,19 +11,26 @@
 <body>
 <% include partials/menu.ejs %>
 <div class="container">
-    <h1>Login Page</h1>
+    <div class="jumbotron">
+        <h1 class="display-4">Login Page</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
+    </div>
 
 
     <h1>Login Form</h1>
     <form action="/login" method="post">
-
-        <input name="id" type="text" placeholder="User ID">
-        <input name="password" type="text" placeholder="Password">
-
-        <button type="submit">Log In</button>
-
+        <div class="form-group">
+            <label for="id">Email address</label>
+            <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
     </form>
-
 
 
 </div>
