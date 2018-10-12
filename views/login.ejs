@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <% include partials/styles.ejs %>
+    <title>Document</title>
+</head>
+<body>
+<% include partials/menu.ejs %>
+
+<h1>Login Page</h1>
+
+
+<h1>Login Form</h1>
+<form action="/login" method="post">
+
+    <input name="id" type="text" placeholder="User ID">
+    <input name="password" type="text" placeholder="Password">
+
+    <button type="submit">Log In</button>
+
+</form>
+
+
+</body>
+</html>

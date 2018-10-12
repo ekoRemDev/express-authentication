@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <% include partials/styles.ejs %>
+    <title>Document</title></head>
+<body>
+<% include partials/menu.ejs %>
+<h1>
+    Signup Form Here
+</h1>
+
+<form action="/signup" method="post">
+
+    <input type="text" name="id" placeholder="User ID">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Sign Up</button>
+
+</form>
+
+</body>
+</html>
