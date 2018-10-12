@@ -10,19 +10,26 @@
 </head>
 <body>
 <% include partials/menu.ejs %>
+<div class="container">
+    <h1>Login Page</h1>
 
-<h1>Login Page</h1>
+
+    <h1>Login Form</h1>
+    <form action="/login" method="post">
+
+        <input name="id" type="text" placeholder="User ID">
+        <input name="password" type="text" placeholder="Password">
+
+        <button type="submit">Log In</button>
+
+    </form>
 
 
-<h1>Login Form</h1>
-<form action="/login" method="post">
 
-    <input name="id" type="text" placeholder="User ID">
-    <input name="password" type="text" placeholder="Password">
+</div>
 
-    <button type="submit">Log In</button>
 
-</form>
+
 
 
 </body>

@@ -25,7 +25,6 @@ var Users = [
     {userid: '5', password: '1'},
 
 ];
-// var userIds = ['1','2','3','4'];
 var userIds = [1,2,3,4,5];
 
 
