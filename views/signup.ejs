@@ -6,8 +6,46 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <% include partials/styles.ejs %>
-    <title>Document</title></head>
-<body>
+    <title>Document</title>
+
+
+
+    <style>
+
+
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+        .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="text-center">
 <% include partials/menu.ejs %>
 
 <div class="container">
@@ -18,21 +56,36 @@
     </div>
 
 
-    <h1>Signup Form</h1>
 
 
-    <form action="/signup" method="post">
-        <div class="form-group">
-            <label for="id">Email address</label>
-            <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
 
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+    <!--<form action="/signup" method="post"  class="form-signin">-->
+        <!--<img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"-->
+             <!--height="72">-->
+        <!--<div class="form-group">-->
+            <!--<label for="id">Email address</label>-->
+            <!--<input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
+            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label for="password">Password</label>-->
+            <!--<input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+        <!--</div>-->
+
+        <!--<button type="submit" class="btn btn-primary">Sign Up</button>-->
+    <!--</form>-->
+    <h1>Sign Up Form</h1>
+
+    <form action="/signup" method="post"  class="form-signin">
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
+             height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please Signup</h1>
+        <label for="id" class="sr-only">Email address</label>
+        <input type="text" id="id" class="form-control" placeholder="Email address" name="id" autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Password"  name="password">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
     </form>
 
 
